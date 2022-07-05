@@ -1,19 +1,25 @@
 import React from 'react';
-import { client as WebSocket } from 'websocket';
 
-console.log(WebSocket)
+// extraHeaders : {
+// 	Cookie:'sessionid=wzo8oqbdmhivh6niiunipd88v8hblexr'
+// }
+
+// socket.on('connect',()=>{
+// 	console.log(1)
+// })
+
+// socket.on('disconnect',()=>{
+// 	console.log(1)
+// })
+
+
+// const socket = new WebSocket('ws://127.0.0.1:8000/ws/chats/?sessionid=xxx',null,{
+// 	headers:{
+// 		Cookie:'sessionid=wzo8oqbdmhivh6niiunipd88v8hblexr'
+// 	}
+// })
 
 class Messages extends React.Component {
-
-
-	componentDidMout(){
-		this.client.connect(
-			'ws://127.0.0.1:8000/ws/chats/',null,null,null,
-			{
-				cookie:'sessionid=wzo8oqbdmhivh6niiunipd88v8hblexr'
-			}
-		)
-	}
 
 	render() {
 		return (
